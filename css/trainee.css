@@ -1,0 +1,219 @@
+.row{
+  width: 100%;
+  margin-bottom:9px;
+}
+
+.row.status {
+    display: none;
+}
+.container1 { padding: 20px; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+ margin: 2% 4% 4% 4%; width: 93%; height: 100%; border-radius: 5px;
+ background: rgba(217, 217, 217, 0.40); } button.view1 { padding: 2px 12px;
+ border-radius: 5px; color: white; border: none;                 right: 12%;
+ top: 16%; position: absolute; background-color: #FB5607; }
+ button.view1:hover{                       color: black; background-color:
+ white; border: 1px solid #FB5607; } button.view { width:10%; padding: 5px
+ 16px; border-radius: 5px; background-color: #FB5607; box-shadow: 0px 4px 4px
+ 0px rgba(0, 0, 0, 0.25); border:none; top: 16%; right: 18.5%; position:
+ absolute; } button.view:hover{                       color: black;
+ background-color: white; border: 1px solid #FB5607; } button.view a{ color:
+ white; text-decoration: none; }
+
+
+input{
+
+width: 425px;
+height: 35px;
+flex-shrink: 0;
+border-radius: 5px;
+border: 1px solid #ced4da;
+background: #FFF;
+margin-bottom: 10px;
+margin-right: 10px;
+}
+
+select{
+width: 370px;
+height: 36px;
+flex-shrink: 0;
+border-radius: 5px;
+border: 0.5px solid #FB5607;
+background: #FFF;
+margin-bottom: 10px;
+}
+.form-check-input{
+width: 18px;
+height: 16px;
+flex-shrink: 0;
+border: 1px solid #000;
+}
+.form-check-label{
+color: #000;
+font-size: 11px;
+font-family: Inter;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+letter-spacing: 0.3px;
+margin-top: 4px;
+}
+.col {
+    font-size: 13px;
+    margin-bottom: 2px;
+}
+.view:hover a{
+  color: black;
+}
+
+
+button.view2 {
+    padding: 6px 12px;
+    border-radius: 5px;
+    color: white;
+    border: none;
+    right: 29%;
+    top: 16%;
+    position: absolute;
+    background-color: #FB5607;
+}
+
+.whole_container {
+    margin-top: 12%;
+}
+
+/*  Mobile responsive  */
+  @media (max-width: 767px) {
+    button#addEmployeeBtn {
+    left: 65px;
+    margin-top: 4.5px;
+    padding: 2.5px;
+    width: 115px;
+    font-size: 11px;
+}
+button.view {
+    margin-top: 4px;
+    font-size: 11px;
+    padding: 2px 5px;
+    right: 15%;
+    width: 24%;
+    margin-right: 6%;
+}
+button.view1 {
+    width: 32px;
+    margin-top: 2.1px;
+    font-size: 11px;
+    padding: 2px 5px;
+    right: 15%;
+}
+* {
+    font-size: 11px;
+}
+button#addEmployeeBtn {
+  
+    margin-top: 4.5px;
+    padding: 2.5px;
+    width: 115px;
+    font-size: 11px;
+}
+.col-md-9 {
+    margin-top: 10% !important;
+    width: 84% !important;
+    margin-left: 18% !important;
+    height: 100vh;
+}
+ 
+
+
+  }
+
+  @media (min-width: 768px) and (max-width:1024px) {    
+    button#addEmployeeBtn {
+      width:150px;
+    left: 270px;
+}
+button.view {
+    margin-top: 4px;
+    font-size: 15px;
+    padding: 2px 5px;
+    right: 15%;
+    width: 24%;
+    margin-right: 6%;
+}
+button.view1 {
+    width: 53px;
+    margin-top: 2.1px;
+    font-size: 15px;
+    padding: 2px 5px;
+    right: 11% !important;
+}
+* {
+    font-size: 15px;
+}
+button#addEmployeeBtn {
+    margin-top: 4.5px;
+    padding: 3px;
+    width: 163px;
+    font-size: 15px;
+}
+.box {
+    margin-left: 6% !important;
+}
+  .col-md-9 {
+    margin-top: 10%;
+    width: 82% !important;
+    margin-left: 19%;
+    height: 100vh;
+}
+  }
+   .slide-container {
+    position: absolute;
+    top: 19%;
+    left: 2%;
+    transform: translate(0, -50%);
+}
+.slide.on {
+    background: white;
+}
+.slide {
+    position: relative;
+    display: inline-block;
+    width: 40px;
+    height: 20px;
+    border-radius: 10px;
+    background-color: #FB5607;
+    cursor: pointer;
+}
+
+    .slide:before {
+      content: '';
+      position: absolute;
+      top: 2px;
+      left: 2px;
+      width: 16px;
+      height: 16px;
+      border-radius: 50%;
+      background-color: #fff;
+      transition: 0.4s;
+    }
+    .slide.on {
+      background: linear-gradient(220deg, #fc7105, orangered,red,orange,blue,violet,black); /* color*/
+    }
+
+    .slide.on:before {
+      transform: translateX(20px);
+    }
+
+    .slide.off:before {
+      transform: translateX(0);
+    }
+
+button.back-btn {
+    margin-top: -3.7rem;
+    margin-left: 74.7pc;
+    border: none;
+    height: 29px;
+    color: white;
+    background-color: #FB5607;
+    width: 58px;
+    border-radius: 5px;
+}

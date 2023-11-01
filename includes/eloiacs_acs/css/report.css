@@ -1,0 +1,203 @@
+input#searchBox {
+    margin-top: 13%;
+}
+button#toggle-filter {
+    margin-top: 13%;
+}
+form#filter-form {
+    margin-left: 14%;
+    margin-right: 20%;
+}
+
+th {
+    color: white;
+    background: linear-gradient(180deg, #fc7105, orange);
+    border: 1px solid #fb5607;
+}
+thead {
+    height: 40px;
+}
+.container2{
+    margin-left:2%;
+}
+.tableclass_pro_report {
+   
+    width: 95%;
+    white-space: nowrap; /* Prevent text from wrapping */
+    overflow-x: auto; /* Add horizontal scrollbar when content overflows */
+ 
+}
+button#downloadExcel {
+    color: white;
+}
+
+.col {
+    text-align: left;
+}
+
+button#button-addon2 {
+    margin-right: 19%;
+    margin-top: 20px;
+    margin-left: 3%;
+}
+button#downloadExcel {
+    margin-left: 9%;
+    margin-top: 20px;
+}
+.filter_table{
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+   padding: 4%;
+    width: 60%;
+}
+.btn-primary {
+    margin-bottom:0.5%;
+    margin-right: 5%;
+    margin-top: 0%;
+    FONT-WEIGHT: 100;
+    FONT-WEIGHT: 100;
+    float: right;
+    color: white;
+    background-color: #fb5607;
+    border-color: orange;
+}
+  
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+th, td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color:orange;
+    font-weight: bold;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+tr:hover {
+    background-color: #ddd;
+}
+/* .table-responsive {
+max-height: 400px; 
+overflow-y: scroll; 
+} */
+thead {
+background-color: orange;
+color: white;
+}
+
+tr.grey{
+margin-left:10px;
+}
+
+
+
+/* 
+#prev-page{
+margin-left: 119%;
+} */
+
+/* Pagination container style */
+/* .pagination {
+text-align: center;
+margin-top: 20px;
+}
+
+/* Pagination links style */
+/* .pagination a {
+display: inline-block;
+padding: 5px 10px;
+margin: 0 2px;
+border: 1px solid #ccc;
+text-decoration: none;
+color: #333;
+border-radius: 4px;
+} */
+
+/* Current page link style */
+/* .pagination .current {
+background-color: #007BFF;
+color: #fff;
+} */
+
+/* Previous and Next link style */
+/* .pagination a#prev-page, .pagination a#next-page {
+background-color: #007BFF;
+color: #fff;
+padding: 5px 10px;
+margin: 0 2px;
+border: 1px solid #007BFF;
+border-radius: 4px;
+text-decoration: none;
+} */
+
+/* Previous and Next link hover style */
+/* .pagination a#prev-page:hover, .pagination a#next-page:hover {
+background-color: #0056b3;
+} */ */
+
+/* Page numbers container style */
+#page-numbers {
+display: inline-block;
+margin-left: 12pc; /* Add margin to separate numbers from "Next" button */
+}
+
+/* Page number style 
+.pagination .page-number {
+padding: 5px 8px; /* Adjust padding for numbers 
+border: 1px solid #ccc;
+border-radius: 4px;
+margin: 0 2px;
+}
+
+/* Page number hover style 
+.pagination .page-number:hover {
+background-color: #007BFF;
+color: #fff;
+}
+#page-info{
+font-weight: bold;
+margin-left: 13pc;
+}
+/*  */
+
+
+.col-lg-8 {
+    display: flex;
+    justify-content: center;
+    flex: 0 0 auto;
+    width: 66.66666667%;
+}
+.col-lg-2 .next{
+    justify-content: end;
+    display: flex;}
+    thead {
+        top: 0;
+        position: sticky;
+    }
+    .table-responsive {
+        height: 275px;
+    }
+    a#prev-page {
+        font-weight: 500;
+        font-size: 17px;
+        color: #fb5607;
+        padding: 3px 5px;
+        /* border: 1px #fb5607 solid; */
+        text-decoration: none;
+    }
+    span.iconn {      
+        font-size: 50px;
+         font-weight: 500;      
+        color: #fb5607;
+
+    }
+    a{  text-decoration:none;}

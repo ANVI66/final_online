@@ -1,0 +1,404 @@
+
+.col-9 .emp_pay_search .col-auto_year
+{
+    width: 46%;
+    height: 100%;
+    border: 0px solid;
+    background-color: #fff;
+    padding: 2px 0px;
+    text-align: center;
+}
+.col-9 .emp_pay_search .col-auto_month {
+    width: 75%;
+    height: 42px;
+    border: 0px solid;
+    background-color: #fff;
+    padding: 0px 6px;
+
+}
+.col-9 .container1 .emp_table_head
+{
+    width: 95%;
+    height: 83px;
+    padding: 0px;
+    flex-shrink: 0;
+    border-radius: 5px;
+    border: 0px solid #FB5607;
+    margin: 18px 3px 5px 43px;
+    display: flex;
+    justify-content: space-between;
+    
+}
+.col-9 .container1 .emp_pay_search {
+    width: 28.5%;
+    height: 45px;
+    padding: 0px;
+    flex-shrink: 0;
+    border-radius: 5px;
+    border: 1px solid #FB5607;
+    margin: 18px 15px;
+    display: flex;
+}
+
+.col-9 .btn_search_emp
+{
+border: 0px solid;
+background-color: #ffffff00;
+padding: 5px;
+font-size: 20px;
+text-align: right;
+
+
+}
+.btn_search_emp i
+{
+    width: 20px;
+    height: 20px;
+    flex-shrink: 0;
+    color: #FB5607;
+    margin: 6px 2px;
+}
+.col-9 .col-auto_download
+{
+    width: 134px;
+    height: 42px;
+    flex-shrink: 0;
+    margin-top: 25px;
+}
+.col-9 select.month_select {
+    border: 0px solid;
+    width: 99%;
+    padding: 8px 1px;
+
+}
+.col-9 input.form-control {
+    width: 100%;
+    font-size: 15px;
+    text-align: center;
+    margin: 1px -11px;
+    border: none;
+}
+
+.col-9 .btn_search_emp_downld
+{
+    border-radius: 5px;
+    background: #FB5607;
+    color: #FFF;
+    font-size: 17px;
+    padding: 5px;
+    margin-top: -9px;
+    font-family: Quicksand;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.4px;
+}
+/* button*/
+.col-9 .btn_edit_salary_view
+{
+    border-radius: 5px;
+    background: #FB5607;
+    color: #FFF;
+    margin: 4px 25px;
+    padding: 6px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 12px;
+    font-family: Quicksand;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.3px;
+}
+/* table */
+
+
+
+
+.col-9 .view_scroll {
+    overflow-x: scroll;
+    
+    height: 350px;
+    margin-left: 30px;
+    border: 0px solid;
+}
+
+.view_scroll::-webkit-scrollbar {
+    height: 10px;
+    width: 4px;
+    background-color: transparent;
+    border: 0px solid #787676;
+}
+
+.view_scroll::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+.view_scroll::-webkit-scrollbar-thumb {
+    background-color: transparent;
+    border-radius: 2px;
+}
+
+.view_scroll::-webkit-scrollbar-thumb:horizontal {
+    background-color: #fb5407ba;
+}
+
+.table-bordered tr:hover td
+{
+    background-color: #FFF;
+    color: black;
+}
+
+
+
+.row.mt-3.table_over_scr_ol {
+    width: 97%;
+    padding-left: 5px;
+}
+
+table.table.table-bordered
+ {
+margin: 1px -13px;
+width: 100%;
+ }
+
+ table.table.table-bordered thead
+
+{
+    width: 100%;
+    height: 66px;
+    flex-shrink: 0;
+    background: linear-gradient(166deg, #FE9901 0%, #FC7205 100%);
+    color: white;
+    text-align: center;
+    margin: 10px; 
+    
+   
+}
+table.table.table-bordered thead th{
+    padding: 7px 31px;
+    position: sticky;
+}
+
+tbody tr
+{
+   
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    border-bottom: 0.5px solid #000;
+    background: #D9D9D9;
+}
+
+.col-9 {
+    width: 100%;
+    margin-left: 2%;
+}
+.col-md-3
+{
+    width: 17% !important;
+
+}
+a.btnn_download:hover {
+    color: white;
+}
+.row
+{
+    width:100%;
+}
+
+tbody {
+  height: 300px; /* Adjust the height as needed */
+  overflow-y: scroll;
+}
+
+/* Make the header row fixed */
+thead {
+    border:1px orange solid;
+  position: sticky;
+  top: 0;
+  background-color: #f8f9fa; /* Adjust the background color as needed */
+}
+th, td {
+  padding: 8px;
+  text-align: left;
+  white-space: nowrap;
+}
+
+/* Add a border to the table */
+table {
+  border-collapse: collapse;
+}
+
+/* Add a border to the table cells */
+th, td {
+  border: 1px solid #ddd; /* Adjust the border color as needed */
+}
+select.form-select {
+    border: none;
+}
+select:focus {
+  outline: 0px solid white; /* Change the color and style as needed */
+  /* or */
+  box-shadow: 0 0 5px white; /* Change the color and size as needed */
+}
+.btn_search_emp_downld{
+    text-decoration:none;
+}
+body {
+    width: 99.9%;
+}
+@media (max-width:767px){
+    .col-9 {
+    width: 100% !important;
+    margin-left: 25px;
+}
+.col-9 .container1 .emp_table_head {
+    width: 100%;
+    height: 64px;
+    margin: -7px 3px 5px 30px;
+}
+.col-9 .container1 .emp_pay_search {
+    width: 81%;
+    heigh0t: 30px;
+    margin: 18px -1px;
+}
+.col-9 .col-auto_download {
+    margin-top:30px;
+}
+a.btn_search_emp_downld {
+    margin-left: 22px;
+}
+.col-md-9 {
+    margin-top: 3%;
+    margin-left: -18px;
+}
+*{
+    font-size:11px;
+}
+
+.col-9 .btn_search_emp_downld {
+    font-size:11px;
+}
+.col-9 .emp_pay_search .col-auto_month {
+    width:100%;
+    height:30px;
+}
+.col-9 .emp_pay_search .col-auto_year {
+    width:115px;
+    padding:0px;
+    height:30px;
+}
+.col-9 .container1 .emp_pay_search {
+    height:36px;
+}
+select.form-select {
+    /* padding-right: 0px; */
+    padding-top: 10px;
+}
+i.fas.fa-search {
+    padding-top: 5px;
+    padding-right: 13px;
+}
+form.row.g-3.align-items-center {
+    width: 74%;
+}
+.col-9 .btn_search_emp {
+    padding:0px;
+}
+table.table.table-bordered thead {
+    width: 100%;
+    height: 43px;}
+    .col-9 .btn_edit_salary_view {
+        padding:3px;
+    }
+    .col-9 .view_scroll {
+        margin-left:10px;
+    }
+    .row.mt-3.table_over_scr_ol {
+    width: 100%;} 
+}
+
+
+
+@media (min-width:768px) and (max-width:1024px){
+
+  
+.col-9 .container1 .emp_table_head {
+    width: 100%;
+    height: 64px;
+    margin: -7px 3px 5px 30px;
+}
+.col-9 .container1 .emp_pay_search {
+    width: 35%;
+    height: 30px;
+    margin: 18px -1px;
+}
+.col-9 .col-auto_download {
+    margin-top:30px;
+}
+a.btn_search_emp_downld {
+    margin-left: 22px;
+}
+.col-md-9 {
+    margin-top: 3%;
+    margin-left: -18px;
+}
+*{
+    font-size:11px;
+}
+
+.col-9 .btn_search_emp_downld {
+    font-size:11px;
+}
+.col-9 .emp_pay_search .col-auto_month {
+    width:100%;
+    height:30px;
+}
+.col-9 .emp_pay_search .col-auto_year {
+    width:115px;
+    padding:0px;
+    height:30px;
+}
+.col-9 .container1 .emp_pay_search {
+    height:36px;
+}
+select.form-select {
+    /* padding-right: 0px; */
+    padding-top: 10px;
+}
+i.fas.fa-search {
+    padding-top: 5px;
+    padding-right: 13px;
+}
+form.row.g-3.align-items-center {
+    width: 74%;
+}
+.col-9 .btn_search_emp {
+    padding:0px;
+}
+table.table.table-bordered thead {
+    width: 100%;
+    height: 43px;}
+    .col-9 .btn_edit_salary_view {
+        padding:3px;
+    }
+    .col-9 .view_scroll {
+        margin-left:10px;
+    }
+    .row.mt-3.table_over_scr_ol {
+    width: 100%;} 
+
+.col-9{
+    width:95% !important;
+  
+}
+*{
+    font-size:11px;
+}
+
+
+}
+.container1{
+    margin-top: 6%;
+}

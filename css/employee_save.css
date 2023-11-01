@@ -1,0 +1,344 @@
+ .box {
+    margin: 7em 1em 1em -5em;
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    /* margin-left: 1%; */
+}
+
+
+.salary_details {
+    margin-right:7%;
+    overflow-x: scroll;
+    
+    height: 500px;
+ 
+    border: 0px solid;
+   
+}
+
+input#search {
+    border: 0.5px solid #FB5607;
+    margin: 11px 0px;
+    padding: 5px 15px;
+    color: black;
+    font-weight: 700;
+    border-radius: 20px;
+    /* text-align: center; */
+}
+
+.salary_details::-webkit-scrollbar {
+    height: 10px;
+    width: 4px;
+    background-color: transparent;
+    border: 0px solid #787676;
+}
+
+.salary_details::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+.salary_details::-webkit-scrollbar-thumb {
+    background-color: transparent;
+    border-radius: 2px;
+}
+
+.salary_details::-webkit-scrollbar-thumb:horizontal {
+    background-color: #fb5407ba;
+}
+
+thead
+{
+     border:1px orange solid;
+  position: sticky;
+  top: 0;
+width: 100%;
+height: 45px;
+flex-shrink: 0;
+background: linear-gradient(166deg, #FE9901 0%, #FC7205 100%);
+
+}
+.table-bordered thead th
+{
+    color: #FFF;
+font-size: 14px;
+font-family: Inter;
+font-weight: 900;
+letter-spacing: 0.3px;
+
+}
+
+table.table-bordered
+{
+    
+    width: max-content;
+    
+}
+.table-bordered tr td
+{
+
+flex-shrink: 0;
+    border-bottom: 0.5px solid #000;
+background: #D9D9D9;
+
+}
+
+tbody {
+  height: 100px; /* Adjust the height as needed */
+  overflow-y: scroll;
+}
+
+/* Make the header row fixed */
+
+th, td {
+  padding: 8px;
+  text-align: left;
+  white-space: nowrap;
+}
+
+/* Add a border to the table */
+table {
+  border-collapse: collapse;
+}
+
+/* Add a border to the table cells */
+th, td {
+  border: 1px solid #ddd; /* Adjust the border color as needed */
+}
+
+.btn.btn-primary.down {
+    border-radius: 5px;
+
+    border: none;
+    background: linear-gradient(180deg, #FE9901 0%, #FC7205 100%);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    width: 120px;
+    height: 42px;
+    flex-shrink: 0;
+    color: #FFF;
+    font-size: 16px;
+    font-family: sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 0.4px;
+}
+
+.btn.btn-primary.btn-sm {
+    width: 92px;
+    height: 22px;
+    border: none;
+    flex-shrink: 0;
+    border-radius: 2px;
+    background: #FB5607;
+    color: #FFF;
+    font-size: 15px;
+    font-family: sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.3px;
+    padding-bottom: 20px;
+    
+}
+
+.filt {
+    color: #000;
+    font-size: 20px;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 0.4px;
+}
+
+#filter {
+    width: 100px;
+    height: 35px;
+    flex-shrink: 0;
+    padding-bottom: 5px;
+    padding-left:8px;
+}
+
+a.bbtn {
+    color: white;
+    text-decoration: none;
+}
+
+.col-md-9 {
+    width: 83% !important;
+    margin-left: 19%;
+}
+
+/* .col-md-3 {
+    width: 25%;
+} */
+
+a.btnn_download:hover {
+    color: white;
+}
+
+.table-bordered tr:hover td {
+    background-color: #FFF;
+    color: black;
+}
+
+
+
+
+.container1 {
+    width: 98%;
+}
+
+
+.col-9 .table_over_scr_ol {
+  
+    
+    height: 500px;
+    margin-left: 30px;
+    border: 0px solid;
+}
+
+.row{
+    display: flex;
+}
+
+@media (max-width: 767px) {
+
+    *{
+        font-size:11px;
+    }
+    a.btn.btn-primary.btn-sm {
+    font-size: 11px;
+}
+      
+    .box {
+    margin: 2em 1em 1em 1em;
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+}
+
+input#search {
+    border: 0.5px solid #FB5607;
+    margin: 11px 49px;}
+
+    .salary_details {
+        height: 370px;
+        margin-right: 0%;
+        margin-bottom: 7px;
+    margin-top: 6px;
+    }
+    label.filt {
+    font-size: 11px;
+}
+button.btn.btn-primary.down {
+    height: 28px;
+    width: 68px;    
+    font-size: 11px;
+}
+select#filter {
+    margin-left: 9px;
+    width: 70px;
+    height: 27px;
+}
+* {
+    font-size: 11px;
+}   
+}
+
+@media (min-width:768px) and (max-width:1024px){
+    .box{
+        margin-left:6%;
+    }
+    .salary_details {
+    width: 95%;
+    height:75%;
+}
+table.table.table-bordered {
+    font-size: 11px;
+}
+a.btn.btn-primary.btn-sm {
+    font-size: 11px;
+}
+}
+/* .searc{
+    margin-top: 11px;
+} */
+
+.searc {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.left {
+    flex: 1; /* Takes up available space on the left */
+}
+
+.right {
+    display: flex;
+    gap: 25px; /* Adjust the gap as needed */
+    align-items:center;
+    margin-left:-169px;
+}
+.button-group {
+    text-align: left;
+}
+
+.button-group button,
+.button-group a {
+    margin-right: 10px; /* Adjust the margin as needed */
+}
+
+.col {
+    flex: 1 0 0%;
+    margin-top: 23px;
+}
+.table-responsive {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    margin-bottom: 16px;
+}
+/* button.back{
+    background: linear-gradient(180deg, #FE9901 0%, #FC7205 100%);
+    text-align:center;
+    padding-left:10px;
+    color:white;
+}
+a.back{
+    text-decoration:none;
+} */
+
+/* Style the button */
+.btn-secondary.back {
+    background: linear-gradient(180deg, #FE9901 0%, #FC7205 100%);
+    color: white !important; /* Text color */
+    margin-left: 64px;
+}
+
+/* Remove text decoration for the anchor tag */
+.btn-secondary.back a {
+    text-decoration: none;
+}
+
+
+ .authorization { background-color: aliceblue; }
+        .unauthorization { width: 97%; color: black; position: relative; }
+        .authorization_footer { position: relative; top: 100vh; }
+        .authorization {
+            box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+            height: auto; /* Adjust the height as needed */
+            padding: 20px; /* Add padding to the authorization box */
+        }
+        .unauthorization {
+            padding-top: 3%;
+            text-align: center;
+            /* height: 150px; Remove height to let it adjust automatically */
+        }
+        .unauth {
+            color: red;
+            text-align: center;
+            padding-top: 3%;
+        }

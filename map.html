@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ELOAICS</title>
+</head>
+
+<body>
+    <div class="text-overlay">
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat blanditiis iure qui quas error, modi aut incidunt quibusdam, tempore adipisci corrupti quasi nostrum impedit voluptas esse sed sequi nemo minima.</p>
+        IPv6 Address: <span id="ipv6"></span><br>
+        IPv4 Address: <span id="ipv4"></span><br>
+        IPv6 Default Gateway: <span id="ipv6-gateway"></span><br>
+        IPv4 Default Gateway: <span id="ipv4-gateway"></span>
+    </div>
+
+    <button type="submit" id="clock-in-button">CLOCK IN</button>
+
+    <div id="block-message" style="display: none;">
+        Button is blocked for this location:<br>
+        IPv6 Address: <span id="block-ipv6"></span><br>
+        IPv4 Address: <span id="block-ipv4"></span><br>
+        IPv6 Default Gateway: <span id="block-ipv6-gateway"></span><br>
+        IPv4 Default Gateway: <span id="block-ipv4-gateway"></span>
+    </div>
+
+    <script>
+        async function fetchDefaultGatewayIPv6() {
+            try {
+                const response = await fetch('https://api6.ipify.org?format=json');
+                const data = await response.json();
+                const userIPv6 = data.ip;
+
+                return userIPv6;
+            } catch (error) {
+                console.error('Failed to fetch the default gateway IPv6 address: ' + error);
+                return null;
+            }
+        }
+
+        function fetchDefaultGatewayIPv4() {
+    // Example user's IPv4 address
+    var userIPv4 = '192.168.1.32'; 
+
+    // Define the allowed IPv4 address range
+    var allowedIPv4Start = '192.168.1.32';
+    var allowedIPv4End = '192.168.1.225';
+
+    // Check if the user's IPv4 address is within the allowed range
+    if (isIPv4InRange(userIPv4, allowedIPv4Start, allowedIPv4End)) {
+        return userIPv4;
+    } else {
+        return null;
+    }
+}
+
+function isIPv4InRange(ip, start, end) {
+    // Convert IPv4 addresses to numeric form for comparison
+    function ipToNumber(ip) {
+        var parts = ip.split('.');
+        return (parseInt(parts[0]) << 24) |
+               (parseInt(parts[1]) << 16) |
+               (parseInt(parts[2]) << 8) |
+               parseInt(parts[3]);
+    }
+
+    var numIP = ipToNumber(ip);
+    var numStart = ipToNumber(start);
+    var numEnd = ipToNumber(end);
+
+    return numIP >= numStart && numIP <= numEnd;
+}
+
+
+        function fetchIPv6Gateway() {
+            var userIPv6Gateway = 'fe80::1%6'; // Example IPv6 Default Gateway, replace with the actual gateway
+
+            return userIPv6Gateway;
+        }
+
+        function fetchIPv4Gateway() {
+            var userIPv4Gateway = '192.168.1.1'; // Example IPv4 Default Gateway, replace with the actual gateway
+
+            return userIPv4Gateway;
+        }
+
+        async function checkLocation() {
+            // Get the user's IPv6 address asynchronously
+            const userIPv6 = await fetchDefaultGatewayIPv6();
+
+            // Get the user's IPv4 address
+            const userIPv4 = fetchDefaultGatewayIPv4();
+
+            // Get the user's IPv6 default gateway
+            const ipv6Gateway = fetchIPv6Gateway();
+
+            // Get the user's IPv4 default gateway
+            const ipv4Gateway = fetchIPv4Gateway();
+
+            // Display the IP addresses and gateways in both sections
+            document.getElementById('ipv6').textContent = userIPv6;
+            document.getElementById('ipv4').textContent = userIPv4;
+            document.getElementById('ipv6-gateway').textContent = ipv6Gateway;
+            document.getElementById('ipv4-gateway').textContent = ipv4Gateway;
+            document.getElementById('block-ipv6').textContent = userIPv6;
+            document.getElementById('block-ipv4').textContent = userIPv4;
+            document.getElementById('block-ipv6-gateway').textContent = ipv6Gateway;
+            document.getElementById('block-ipv4-gateway').textContent = ipv4Gateway;
+
+            // Check if the user's IPv6 is blocked and IPv4 is in the allowed range, and they are not on a mobile device
+            if (userIPv6 === 'fe80::da3f:b996:df91:ef17%6' && userIPv4 === '192.168.1.32') {
+                document.getElementById('block-message').style.display = 'block';
+                document.getElementById('clock-in-button').style.display = 'none';
+            } else {
+                document.getElementById('block-message').style.display = 'none';
+                document.getElementById('clock-in-button').style.display = 'block';
+            }
+        }
+
+        checkLocation();
+    </script>
+</body>
+
+</html>
